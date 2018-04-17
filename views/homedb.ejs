@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Home Insurance</title>
+    </head>
+    <body>
+        <h3>Home Insurances</h3>
+        <% for(var i=0; i<insurances.length; i++)
+            { %>
+                <h4><%- insurances[i].title %></h4>
+                <p><%- insurances[i].content.substring(0,100) %>...</p>
+                <a href="/<%=insurances[i]._id%>">Read More...</a>
+        <%  } %>
+    </body>
+</html>

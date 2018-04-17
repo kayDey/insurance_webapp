@@ -1,0 +1,13 @@
+.container{
+	width:50%;
+	margin-top:10%;
+	background-color: #9399F5;
+	padding: 5%;
+	border-radius: 10px;
+}
+.font{
+	font-family: 'PT Sans', sans-serif;
+}
+.icon{
+	font-size: 1.5em;
+}

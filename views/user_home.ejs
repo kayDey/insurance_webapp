@@ -1,0 +1,26 @@
+<html>
+    
+    <body>
+        <h3>User Home</h3>
+        <h5>Hello <%= un[0].username %>!</h5>
+        <p>Your policies : </p>
+        <%if(user.length>0){%>
+        <%for(var i=0; i<user[0].buys.length; i++)
+        {%>
+            <%= user[0].buys[i].policy %>
+            <%= user[0].buys[i].sum %>
+            <span id = "inst"><%= user[0].buys[i].time %></span>
+            <%= user[0].buys[i].prem %>
+            <br>
+            <%if(user[0].buys[i].time>0){%>
+                <a href="/paynow/<%=user[0].buys[i]._id%>">PAY NEXT PREMIUM</a>
+            <%}
+            else{%>
+                <a href="/claimnow/<%=user[0].buys[i]._id%>">CLAIM NOW</a>
+            <%}%>
+        <%}%>
+        <%}%>
+        <a href="/logout">Logout</a>
+        <a href="/">Home</a>
+    </body>
+</html>

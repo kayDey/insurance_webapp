@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Bazar</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/style2.css" />
+      <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+</head>
+
+<body>
+  <div class="carousel">
+    <div class="carousel__control">
+    </div>
+    <div class="carousel__stage">
+        <div class="spinner spinner--left">
+            <div class="spinner__face js-active" data-bg="#27323c">
+                <div class="content" data-type="iceland">
+                    <div class="content__left">
+                        <h1>INSURANCE BAZAR<br><span>India's Best Insurance Destination</span></h1>
+                    </div>
+                    <div class="content__right">
+                      <a type="button" class="btn btn-custom" href="/login">Login/Sign Up</a>
+                        <div class="content__main">
+                          <ul class="ch-grid">
+                  					<li>
+                  						    <div class="ch-item ch-img-1">
+                  							
+                  							    <div class="ch-info">
+                  								    <a href="/life">
+                  								        <h3>LIFE</h3>
+                  								    </a>
+                  						    	</div>
+                  						    </div>
+                  			
+                  					</li>
+                  					<li>
+                  						<div class="ch-item ch-img-2">
+                  							<div class="ch-info">
+                  								<a href="/health">
+                  								    <h3>HEALTH</h3>
+                                                </a>
+                  							</div>
+                  						</div>
+                  					</li>
+                  					<li>
+                  						<div class="ch-item ch-img-3">
+                  							<div class="ch-info">
+                  							    <a href="/home">
+                  							        <h3>HOME</h3>
+                  							    </a>
+                  							</div>
+                  						</div>
+                  					</li>
+                            <li>
+                  						<div class="ch-item ch-img-4">
+                  							<div class="ch-info">
+                  							    <a href="/travel">
+                  								    <h3>TRAVEL</h3>
+                  								</a>
+                  							</div>
+                  						</div>
+                  					</li>
+                  				</ul>
+                        </div>
+                        <h3 class="content__index">01</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner__face" data-bg="#19304a">
+                <div class="content" data-type="china">
+                    <div class="content__left">
+                        <h1>NEWS<br><span>All You Need to Know</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                            <% for(var i=0; i<news.length; i++)
+                                { %>
+                                    <p><a href="<%= news[i].link %>" style="text-decoration:none; color:white"><%- news[i].title %></a></p>
+                            <%  } %>
+                        </div>
+                        <h3 class="content__index">02</h3>
+                    </div>
+                </div>n
+            </div>
+            <div class="spinner__face" data-bg="#2b2533">
+                <div class="content" data-type="usa">
+                    <div class="content__left">
+                        <h1>CONTACT US<br><span>Always at your Service</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                          <p>SRISHTI CHAUDHARY</p>
+                          <p> &nbsp; Director</p>
+                            <p>&nbsp; Phone: +91 9431883899</p>
+                            <p> &nbsp; Email:<a href="mailto:director@insurancebazar.com" style="color:white;"> director@insurancebazar.com</a></p>
+
+                        </div>
+                        <h3 class="content__index">03</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner__face" data-bg="#312f2d">
+                <div class="content" data-type="peru">
+                    <div class="content__left">
+                        <h1>COMPLAINT<br><span>We would like to get better</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                          <form action="mailto:admin@insurancebazar.com" method="get">
+                          Subject: &nbsp;&nbsp;&nbsp; <input type="text" name="subject"><br/>
+                          Message: <textarea name="body" rows="5" cols="50"></textarea><br/>
+                          <input type="submit" value="Send">
+                        </form>
+                        </div>
+                        <h3 class="content__index">04</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  Poor man's preloader -->
+<div style="height: 0; width: 0; overflow: hidden">
+<img src="https://brakpanherald.co.za/wp-content/uploads/sites/27/2016/05/fathers-day.jpg">
+<img src="https://www.eschoolnews.com/files/2016/02/news-600x400.jpg">
+<img src="http://cdn.supercell.com/supercell.com/180329194846/supercell.com/files/styles/hero_image_narrow/public/hero_games_0.jpg?itok=WklCAzhj&timestamp=1418650517">
+<img src="http://www.wns.com/Portals/0/Images/Articles/DesktopImages/600/90/Insurance_Increase-Claims-Recovery-with-Subrogation_HD.jpg">
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

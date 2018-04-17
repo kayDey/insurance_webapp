@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Travel Insurance</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+
+    <style>
+    .column {
+    float: left;
+    width: 33.33%;
+    border-width: thick;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    border-color: blue;
+}
+.box{
+  border: 5px solid white;
+  border-radius: 20px;
+  font-size: 0.8em;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  height: auto;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+    border-color: red;
+    border-width: thick;
+}
+    .bg{
+      z-index: 0;
+      width: 100%;
+    }
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+  /*  display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#b1
+{
+  border-radius: 6px;
+  background-color: white;
+    color: black;
+    border: 2px solid DodgerBlue;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s
+}
+
+p{
+  color:black;
+  font-size: 10 em;
+  font-style: italic;
+  font-family: sans-serif;
+}
+#b1:hover {
+    background-color: DodgerBlue;
+    color: white;
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    font-family: Impact;
+}
+h2{
+  color: #f1cdf7;
+}
+    </style>
+  </head>
+  <body>
+
+        	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        		<ol class="carousel-indicators">
+        			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        		        		</ol>
+
+        		<div class="carousel-inner" role="listbox">
+        			<div class="carousel-item active">
+
+                <img class="ig" src="http://www.oaklandairport.com/wp-content/themes/airport/includes/timthumb.php?src=http://www.oaklandairport.com/wp-content/uploads/2016/05/box6.jpg&h=256&w=570&zc=1&q=80" width=100% height=100% alt="First Slide" />
+                <div id="overlay">
+                   <br><br><br><br><br><br>
+                <h1>"Let's fly, fly away."</h1>
+              </div>
+            	</div>
+
+        			<div class="carousel-item">
+        				<img class="bg"  src="http://travel.policybazaar.com/images/bg_1.jpg" alt="Second Slide" />
+                <div id="overlay">
+                <div class="row">
+                <div class="column">  <h2> &nbsp; &nbsp; IDFC Travel Insurance </h2>
+                <br>
+                <div class="box">  IDFC Travel Insurance offers medical assistance and coverage in case of loss of documents.</p>
+                </div>
+                <br><br><br>
+                <br>
+                  &nbsp; &nbsp; <button id="b1" class ="btn btn-default" type="button">Explore more..</button>
+                </div>
+               <div class="column">  <h2> &nbsp; &nbsp; ICICI Travel Insurance </h2>
+                 <br>
+                 <div class="box">  ICICI Lombard International Travel Insurance offers coverage and services that suit every individual's need. With a wide range of benefits, ICICI Lombard offers comprehensive coverage.
+                </div>
+                 <br><br>
+                   &nbsp; <button id="b1" class ="btn btn-default" type="button">Explore more..</button>
+               </div>
+              <div class="column">  <h2> &nbsp; &nbsp; Bharati Travel Insurance </h2>
+                <br>
+                <div class="box">  Bharati Travel Insurance helps you travel without having to worry about anything. We provide assistance in case of loss of documents along with any kind of medical assistance.
+                </div>
+                <br><br><br>
+                  &nbsp; <button id="b1"  class ="btn btn-default" type="button">Explore more..</button>
+              </div>
+              </div>
+              </div>
+        				</div>
+
+
+        		</div>
+
+        		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        			<span class="icon-prev" aria-hidden="true"></span>
+        			<span class="sr-only">Previous</span>
+        		</a>
+
+        		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        			<span class="icon-next" aria-hidden="true"></span>
+        			<span class="sr-only">Next</span>
+        		</a>
+        	</div>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
